@@ -4,54 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Cart</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index.css" /> <!-- Link to main CSS file -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
+      rel="stylesheet" <!-- Link to Google Fonts -->
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" <!-- Link to Font Awesome icons -->
     />
-    <script src="index.js" defer></script>
-    <script src="cart.js" defer></script>
+    <script src="index.js" defer></script> <!-- Link to main JavaScript file -->
+    <script src="cart.js" defer></script> <!-- Link to shopping cart JavaScript file -->
   </head>
   <body>
     <header>
-      <div id="head" class="logo"><a href="/index.html">My E-Store</a></div>
+      <div id="head" class="logo"><a href="/index.html">My E-Store</a></div> <!-- Store logo and link to homepage -->
       <nav>
         <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <!-- <li><a href="cart.html">Cart</a></li> -->
+          <li><a href="/index.html">Home</a></li> <!-- Link to Home -->
+          <li><a href="#products">Products</a></li> <!-- Link to Products section -->
+          <li><a href="#about">About</a></li> <!-- Link to About section -->
+          <li><a href="#contact">Contact</a></li> <!-- Link to Contact section -->
+          <!-- <li><a href="cart.html">Cart</a></li> --> <!-- Uncomment if a direct Cart link is needed -->
         </ul>
-        <div class="hamburger" id="hamburger">
+        <div class="hamburger" id="hamburger"> <!-- Hamburger menu for mobile view -->
           <i class="fas fa-bars"></i>
         </div>
-        <div class="close-hamburger" id="close-hamburger" style="display: none">
+        <div class="close-hamburger" id="close-hamburger" style="display: none"> <!-- Close icon for mobile view -->
           <i class="fas fa-times"></i>
         </div>
       </nav>
       <div class="controls">
         <div class="cart-icon">
-          <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
-          <span id="cart-count" class="cart-count">0</span>
+          <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a> <!-- Shopping cart icon -->
+          <span id="cart-count" class="cart-count">0</span> <!-- Cart item count -->
         </div>
-        <div id="theme-toggle"><i class="fas fa-moon"></i></div>
+        <div id="theme-toggle"><i class="fas fa-moon"></i></div> <!-- Theme toggle icon -->
       </div>
     </header>
 
     <main id="cart">
-      <h1>Your Shopping Cart</h1>
-      <div id="cart-items"></div>
-      <p id="total-price"></p>
-      <button id="checkout">Checkout</button>
+      <h1>Your Shopping Cart</h1> <!-- Main heading for the shopping cart -->
+      <div id="cart-items"></div> <!-- Container for displaying cart items -->
+      <p id="total-price"></p> <!-- Paragraph for displaying total price -->
+      <button id="checkout">Checkout</button> <!-- Checkout button -->
     </main>
 
     <footer>
-      <p>&copy; 2024 My E-Store. All rights reserved.</p>
+      <p>&copy; 2024 My E-Store. All rights reserved.</p> <!-- Footer with copyright information -->
     </footer>
   </body>
 </html>
