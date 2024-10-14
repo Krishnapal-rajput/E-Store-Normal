@@ -1,0 +1,384 @@
+/* Base Styles */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(60, 79, 118, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 10px 20px; /* Standard padding */
+    position: sticky; /* Make header sticky */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it is above other content */
+  }
+  
+  #head a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    display: flex;
+    align-items: center;
+    position: relative; /* Position relative for stacking close icon */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0; /* Remove default margin */
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hamburger Menu Styles */
+  .hamburger {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .close-hamburger {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 15px; /* Space between close icon and controls */
+  }
+  
+  /* Control Buttons */
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Original gap */
+  }
+  
+  .cart-icon,
+  #theme-toggle {
+    scale: 1;
+  }
+  
+  .cart-icon:hover,
+  #theme-toggle:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+  
+  .cart-icon {
+    position: relative; /* Make it relative for absolute positioning of the count */
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -5px; /* Adjust as necessary */
+    right: -10px; /* Adjust as necessary */
+    background-color: red; /* Color of the badge */
+    color: white;
+    border-radius: 50%; /* Round shape */
+    padding: 2px 5px; /* Padding for better appearance */
+    font-size: 0.75rem; /* Smaller font size */
+    display: none; /* Initially hidden */
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 10px 20px;
+  }
+  
+  .filter-section {
+    padding: 20px;
+  }
+  
+  .product-list {
+    padding: 20px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Product Card Styles */
+  .product-card {
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    transition: box-shadow 0.3s;
+    height: 350px; /* Fixed height for uniformity */
+    padding: 10px; /* Inner padding */
+  }
+  
+  .product-image {
+    width: 100%; /* Full width of the card */
+    height: 50%; /* Adjust height to occupy half of the card */
+    object-fit: contain; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and details */
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding: 10px;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Button Styles */
+  button {
+    cursor: pointer;
+  }
+  
+  /* Link Styles */
+  a {
+    text-decoration-line: none;
+    cursor: pointer;
+    font-family: inherit;
+    color: inherit;
+  }
+  
+  /* Message Styles */
+  #message {
+    margin-top: 20px;
+    color: green;
+  }
+  
+  #product-image {
+    width: 300px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 10px; /* Standard padding */
+    background-color: #3c4f76;
+    color: white;
+    height: 60px; /* Default height */
+  }
+  
+  /* Dark Mode Styles */
+  body.dark {
+    background-color: #121212;
+    color: white;
+  }
+  
+  header.dark {
+    background-color: #1e1e1e;
+  }
+  
+  footer.dark {
+    background-color: #1e1e1e;
+  }
+  
+  .product-card.dark {
+    background-color: #2c2c2c;
+    border-color: #444;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1440px) {
+    header {
+      padding: 15px;
+    }
+  
+    nav ul {
+      gap: 10px;
+    }
+  
+    nav a {
+      font-size: 0.9rem; /* Slightly smaller font size */
+    }
+  
+    .controls {
+      font-size: 1rem;
+      gap: 40px;
+    }
+  
+    .filter-section h2 {
+      font-size: 1.2rem; /* Smaller font size for headings */
+    }
+  
+    .product-list h2 {
+      font-size: 1.5rem; /* Adjusted heading size */
+    }
+  
+    .product-card h3 {
+      font-size: 1.1rem; /* Smaller product name */
+    }
+  
+    .product-card p {
+      font-size: 0.9rem; /* Smaller price */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .controls {
+      gap: 24px; /* Keep horizontal layout and gap of 24px */
+    }
+  
+    .product-card {
+      height: auto; /* Allow card height to adjust for smaller screens */
+    }
+  }
+  @media (max-width: 618px) {
+    .product-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust card size */
+      justify-items: center; /* Center the cards */
+    }
+  
+    .product-card {
+      width: 90%; /* Limit card width for better appearance */
+      max-width: 300px; /* Set a max width for the card */
+      margin: 0 auto; /* Center the card */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      height: 50px; /* Reduced height for small screens */
+      padding: 5px 15px; /* Reduced padding */
+    }
+  
+    nav ul {
+      display: none; /* Hide by default */
+      flex-direction: column; /* Stack links vertically */
+      position: absolute;
+      top: 60px; /* Position below the header */
+      right: 0;
+      background-color: #3c4f76;
+      padding: 12px;
+      width: 120px; /* Full width */
+      max-height: 300px; /* Set a max height for the dropdown */
+      overflow-y: auto; /* Allow scrolling if content exceeds max height */
+      z-index: 10; /* Ensure it's above other content */
+    }
+  
+    nav ul.active {
+      display: flex; /* Show links when hamburger is clicked */
+      border-radius: 8px;
+      background-color: rgba(60, 79, 118, 0.8); /* Semi-transparent background */
+    }
+  
+    .close-hamburger {
+      display: block; /* Show close icon */
+      position: relative;
+      right: 18px;
+      top: 70px;
+      color: white; /* Match the text color */
+      margin-bottom: 10px; /* Space below the close icon */
+      text-align: right; /* Align text to the right */
+      z-index: 10;
+    }
+  
+    .hamburger {
+      display: block; /* Show hamburger icon */
+      position: absolute;
+      right: 15px; /* Adjust positioning */
+      z-index: 2; /* Higher z-index for visibility */
+    }
+  
+    footer {
+      height: 50px; /* Reduced height for small screens */
+      padding: 5px; /* Reduced padding */
+    }
+  
+    nav a {
+      font-size: 0.8rem; /* Further reduce font size */
+    }
+  
+    .filter-section h2,
+    .product-list h2 {
+      font-size: 1.2rem; /* Smaller font size */
+    }
+  
+    .product-card h3 {
+      font-size: 1rem; /* Smaller product name */
+    }
+  
+    .product-card p {
+      font-size: 0.8rem; /* Smaller price */
+    }
+  
+    .controls {
+      flex-direction: row; /* Keep controls horizontal */
+      gap: 24px; /* Smaller gap between controls */
+      position: absolute; /* Absolute position */
+      right: 75px; /* Adjust position as needed */
+      top: 20px; /* Place below the header */
+      z-index: 1; /* Ensure controls are above other elements */
+    }
+  }
+  
+  @media (max-width: 375px) {
+    header {
+      flex-direction: row;
+      align-items: flex-start; /* Align header items vertically */
+      height: 50px; /* Maintain reduced height */
+      padding: 5px 15px; /* Keep reduced padding */
+    }
+  
+    nav a {
+      font-size: 0.75rem; /* Further reduce font size for smaller screens */
+      padding: 5px; /* Add padding for touch targets */
+    }
+  
+    .filter-section h2,
+    .product-list h2 {
+      font-size: 1.2rem; /* Smaller font size for headings */
+    }
+  
+    .product-card {
+      height: auto; /* Allow card height to adjust */
+      padding: 10px; /* Add padding for better spacing */
+    }
+  
+    .product-card h3 {
+      font-size: 0.9rem; /* Smaller product name */
+    }
+  
+    .product-card p {
+      font-size: 0.7rem; /* Smaller price */
+    }
+  
+    .controls {
+      flex-direction: row; /* Keep controls horizontal */
+      gap: 24px; /* Smaller gap between controls */
+      right: 75px; /* Adjust position as needed */
+      top: 20px; /* Place below the header */
+      z-index: 1; /* Ensure above other elements */
+    }
+  
+    .hamburger {
+      right: 15px; /* Ensure it remains visible */
+      top: 12px;
+      z-index: 2; /* Higher z-index for visibility */
+    }
+  
+    #head {
+      margin-top: 12px;
+    }
+  }
+  

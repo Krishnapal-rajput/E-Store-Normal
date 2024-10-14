@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="index.js" defer></script>
+    <script src="cart.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="head" class="logo"><a href="/index.html">My E-Store</a></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="cart.html">Cart</a></li> -->
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="close-hamburger" id="close-hamburger" style="display: none">
+          <i class="fas fa-times"></i>
+        </div>
+      </nav>
+      <div class="controls">
+        <div class="cart-icon">
+          <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <span id="cart-count" class="cart-count">0</span>
+        </div>
+        <div id="theme-toggle"><i class="fas fa-moon"></i></div>
+      </div>
+    </header>
+
+    <main id="cart">
+      <h1>Your Shopping Cart</h1>
+      <div id="cart-items"></div>
+      <p id="total-price"></p>
+      <button id="checkout">Checkout</button>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 My E-Store. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
