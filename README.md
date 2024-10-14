@@ -2,6 +2,10 @@
 
 Welcome to **My E-Store**, a simple e-commerce website built using HTML, CSS, and JavaScript. This project demonstrates how to create a dynamic shopping experience with product listings, a product details page, and a shopping cart functionality.
 
+## Preview
+
+You can view the live project [here](https://krishnas-estore.netlify.app/).
+
 ## Features
 
 - **Home Page**: A welcoming section with featured products.
