@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commerce Website</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- Google Fonts for typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Link to the main JavaScript file -->
     <script src="index.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div id="head" class="logo"><a href="#">My E-Store</a></div>
-        <nav>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="close-hamburger" id="close-hamburger" style="display: none;">
-                <i class="fas fa-times"></i>
-            </div>
-        </nav>
-        <div class="controls">
-            <div class="cart-icon" id="cart-icon">
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                <span id="cart-count" class="cart-count">0</span>
-            </div>            
-            <div id="theme-toggle"><i class="fas fa-moon"></i></div>
+      <!-- Logo Section -->
+      <div id="head" class="logo"><a href="#">My E-Store</a></div>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <!-- Navigation Links -->
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Hamburger Menu for mobile view -->
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
         </div>
-    </header>    
+        <!-- Close icon for the hamburger menu -->
+        <div class="close-hamburger" id="close-hamburger" style="display: none">
+          <i class="fas fa-times"></i>
+        </div>
+      </nav>
+      <div class="controls">
+        <!-- Shopping Cart Icon -->
+        <div class="cart-icon" id="cart-icon">
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          <!-- Cart Item Count -->
+          <span id="cart-count" class="cart-count">0</span>
+        </div>
+        <!-- Theme Toggle Button -->
+        <div id="theme-toggle"><i class="fas fa-moon"></i></div>
+      </div>
+    </header>
 
     <main>
-        <section class="hero">
-            <h1>Welcome to Our Store!</h1>
-            <p>Discover the best products at unbeatable prices.</p>
-        </section>
+      <!-- Hero Section with a welcome message -->
+      <section class="hero">
+        <h1>Welcome to Our Store!</h1>
+        <p>Discover the best products at unbeatable prices.</p>
+      </section>
 
-        <section id="filter" class="filter-section">
-            <h2>Filter Products</h2>
-            <select id="category-filter">
-                <option value="">All Categories</option>
-                <option value="electronics">Electronics</option>
-                <option value="jewelery">Jewelry</option>
-                <option value="men's clothing">Men's Clothing</option>
-                <option value="women's clothing">Women's Clothing</option>
-            </select>
-        </section>
+      <!-- Product Filter Section -->
+      <section id="filter" class="filter-section">
+        <h2>Filter Products</h2>
+        <select id="category-filter">
+          <option value="">All Categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="jewelery">Jewelry</option>
+          <option value="men's clothing">Men's Clothing</option>
+          <option value="women's clothing">Women's Clothing</option>
+        </select>
+      </section>
 
-        <section id="products" class="product-list">
-            <h2>Featured Products</h2>
-            <div class="product-grid">
-                <!-- Product items will be dynamically inserted here -->
-            </div>
-        </section>        
+      <!-- Featured Products Section -->
+      <section id="products" class="product-list">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+          <!-- Product items will be dynamically inserted here -->
+        </div>
+      </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 My E-Store. All rights reserved.</p>
+      <p>&copy; 2024 My E-Store. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
